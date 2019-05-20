@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Home Page</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" />
+
+    <!-- Google Fonts -->
+
+    <!-- CSS Implementing ../assets -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/font-awesome/css/fontawesome-all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/animate.css/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/hs-megamenu/src/hs.megamenu.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/fancybox/jquery.fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/slick-carousel/slick/slick.css"
+    />
+    <link rel="stylesheet" href="../assets/vendor/revolution/css/layers.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/revolution/css/navigation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/revolution/css/settings.css"
+    />
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <style type="text/css">
+      span {
+        border-bottom: 1px solid #f5f5f5;
+      }
+    </style>
+  </head>
+  <body class="p-5">
+    <span class="text-primary p-1 d-block">
+      <strong class="u-text-animation u-text-animation--typing"></strong> </span
+    ><br />
+    <span class="text-primary p-1 d-block">
+      <strong class="u-text-animation u-text-animation--typing2"></strong>
+    </span>
+    <span class="text-primary p-1 d-block">
+      <strong class="u-text-animation u-text-animation--typing3"></strong>
+    </span>
+    <!-- JS Global Compulsory -->
+    <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JS Implementing ../assets -->
+    <script src="../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../assets/vendor/typed.js/lib/typed.min.js"></script>
+    <script src="../assets/vendor/slick-carousel/slick/slick.js"></script>
+
+    <!-- JS Front -->
+    <script src="../assets/js/hs.core.js"></script>
+    <script src="../assets/js/components/hs.header.js"></script>
+    <script src="../assets/js/components/hs.unfold.js"></script>
+    <script src="../assets/js/components/hs.focus-state.js"></script>
+    <script src="../assets/js/components/hs.malihu-scrollbar.js"></script>
+    <script src="../assets/js/components/hs.validation.js"></script>
+    <script src="../assets/js/components/hs.fancybox.js"></script>
+    <script src="../assets/js/components/hs.slick-carousel.js"></script>
+    <script src="../assets/js/components/hs.show-animation.js"></script>
+    <!-- <script src="../assets/js/components/hs.svg-injector.js"></script> -->
+    <script src="../assets/js/components/hs.go-to.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/jquery.themepunch.revolution.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/jquery.themepunch.tools.min.js"
+    ></script>
+    <script src="../assets/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/vendor/revolution/js/extensions/revolution.extension.migration.min.js"
+    ></script>
+    <script src="../assets/js/main.js"></script>
+
+    <!-- JS ../assets Init. -->
+    <script>
+      $(window).on("load", function() {
+        // initialization of HSMegaMenu component
+        $(".js-mega-menu").HSMegaMenu({
+          event: "hover",
+          pageContainer: $(".container"),
+          breakpoint: 767.98,
+          hideTimeOut: 0
+        });
+
+        // initialization of svg injector module
+        //$.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+      });
+
+      $(document).on("ready", function() {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($("#header"));
+
+        // initialization of unfold component
+        $.HSCore.components.HSUnfold.init($("[data-unfold-target]"), {
+          afterOpen: function() {
+            $(this)
+              .find('input[type="search"]')
+              .focus();
+          }
+        });
+
+        // initialization of malihu scrollbar
+        $.HSCore.components.HSMalihuScrollBar.init($(".js-scrollbar"));
+
+        // initialization of forms
+        $.HSCore.components.HSFocusState.init();
+
+        // initialization of form validation
+        $.HSCore.components.HSValidation.init(".js-validate", {
+          rules: {
+            confirmPassword: {
+              equalTo: "#signupPassword"
+            }
+          }
+        });
+
+        // initialization of show animations
+        $.HSCore.components.HSShowAnimation.init(".js-animation-link");
+
+        // initialization of fancybox
+        $.HSCore.components.HSFancyBox.init(".js-fancybox");
+
+        // initialization of text animation (typing)
+        var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+          strings: [
+            "520 节日快乐.",
+            "见谅，我是直男，比较无聊",
+            "😄，每次出来就喝奶茶，刷手机，我这种还是少见的."
+          ],
+          typeSpeed: 60,
+          loop: false,
+          backSpeed: 25,
+          backDelay: 1500,
+          onComplete: function() {
+            console.log((typed.cursorChar = "#"));
+          }
+        });
+        // setTimeout(function(){
+        var typed = new Typed(".u-text-animation.u-text-animation--typing2", {
+          strings: [
+            "听说今天表白，大家都接受.",
+            "处个对象要不要.",
+            "打扰了，是心动的感觉."
+          ],
+          typeSpeed: 60,
+          loop: false,
+          backSpeed: 25,
+          backDelay: 1500,
+          startDelay: 2000
+        });
+        // },2000)
+        // setTimeout(function(){
+        var typed = new Typed(".u-text-animation.u-text-animation--typing3", {
+          strings: ["2019年05月20日23:02:29", "林剑锋.", "致-张莉."],
+          typeSpeed: 60,
+          loop: false,
+          backSpeed: 25,
+          backDelay: 1500,
+          startDelay: 12000
+        });
+        // initialization of slick carousel
+        $.HSCore.components.HSSlickCarousel.init(".js-slick-carousel");
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init(".js-go-to");
+      });
+    </script>
+  </body>
+</html>
